@@ -1,0 +1,9 @@
+<div class="container">
+<h1> Welcome in <%= @restaurant.name %> </h1>
+<h3> We are a <%= @restaurant.category %> restaurant</h3>
+<h4>Don't forget to book your table : <%= @restaurant.phone_number %></h4>
+<h4>here is our location <%= 	@restaurant.address %></h4>
+
+<%= link_to "Back to all restaurants", restaurants_path  %>
+<%= link_to 'Leave a review', new_restaurant_review_path(@restaurant)  %>
+</div>
